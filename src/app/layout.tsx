@@ -7,12 +7,8 @@ import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] });
 
-// Client components can't use metadata export
-// Define it in your metadata.ts file or use static metadata
-export const metadata = {
-  title: 'Hospital Management System',
-  description: 'A comprehensive solution for hospital management',
-};
+// Client components can't use metadata export directly
+// Moved to separate metadata.js file
 
 export default function RootLayout({
   children,
