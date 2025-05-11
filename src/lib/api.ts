@@ -4,6 +4,12 @@ import { env } from './env';
 // Import type only to avoid circular dependency
 import type { AuthService } from '@/services/auth-service';
 
+// Log API configuration on startup
+console.log('API Config:', {
+  apiUrl: env.apiUrl,
+  environment: env.environment
+});
+
 // This will be set by the auth context
 let authService: AuthService;
 let getAccessToken: () => string | null;

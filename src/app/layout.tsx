@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+'use client';
+
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { AuthProvider } from '@/context/AuthContext';
@@ -6,9 +7,11 @@ import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'OPD Management System',
-  description: 'A comprehensive solution for hospital outpatient departments',
+// Client components can't use metadata export
+// Define it in your metadata.ts file or use static metadata
+export const metadata = {
+  title: 'Hospital Management System',
+  description: 'A comprehensive solution for hospital management',
 };
 
 export default function RootLayout({

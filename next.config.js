@@ -33,8 +33,8 @@ const nextConfig = {
     fallbackNodePolyfills: false
   },
 
-  // Only build specific pages
-  pageExtensions: ['minimal.tsx', 'minimal.ts'],
+  // Include regular pages along with minimal pages
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'minimal.tsx', 'minimal.ts'],
 
   webpack: (config, { isServer }) => {
     // Troubleshooting Server Components
