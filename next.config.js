@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   output: 'standalone',
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://hospital-management-backend.vercel.app/api',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://backend-ba7f06bxx-piyush-rakesh-chaturvedis-projects.vercel.app/api',
     NEXT_PUBLIC_ENVIRONMENT: process.env.NEXT_PUBLIC_ENVIRONMENT || 'production',
     NEXT_PUBLIC_MOCK_API: process.env.NEXT_PUBLIC_MOCK_API || 'false',
     NEXT_PUBLIC_MOCK_VIDEO: process.env.NEXT_PUBLIC_MOCK_VIDEO || 'false'
