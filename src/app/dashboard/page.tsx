@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 
+// Main dashboard page that redirects based on user role
 export default function DashboardPage() {
   const { user, isLoading, logout } = useAuth();
   const router = useRouter();
