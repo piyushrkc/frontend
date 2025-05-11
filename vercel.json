@@ -14,10 +14,5 @@
     "NEXTJS_BUILD_TARGET": "server",
     "NEXT_TELEMETRY_DISABLED": "1",
     "NEXT_SHARP_PATH": "/tmp/node_modules/sharp"
-  },
-  "buildEnvironment": {
-    "SKIP_STATIC_GENERATION": "true",
-    "NEXTJS_BUILD_TARGET": "server",
-    "NEXT_TELEMETRY_DISABLED": "1"
   }
 }
