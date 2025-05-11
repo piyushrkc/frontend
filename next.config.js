@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
+  output: 'export', // Change from 'standalone' to 'export'
+  trailingSlash: true, // Add trailing slashes
+  distDir: '.next',
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://backend-ba7f06bxx-piyush-rakesh-chaturvedis-projects.vercel.app/api',
     NEXT_PUBLIC_ENVIRONMENT: process.env.NEXT_PUBLIC_ENVIRONMENT || 'production',
@@ -11,16 +13,16 @@ const nextConfig = {
   },
   images: {
     domains: ['localhost', 'hospital-management-backend.vercel.app'],
+    unoptimized: true, // Required for 'export'
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
-    tsconfigPath: './tsconfig.json'
   },
   experimental: {
-    forceSwcTransforms: true,
+    // Remove experimental options
   },
 };
 
