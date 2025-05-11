@@ -30,8 +30,7 @@ const nextConfig = {
   // Experimental features to bypass errors
   experimental: {
     serverComponentsExternalPackages: [],
-    fallbackNodePolyfills: false,
-    serverActions: false,
+    fallbackNodePolyfills: false
   },
 
   // Only build specific pages
